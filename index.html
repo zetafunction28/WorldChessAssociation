@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCA - World Chess Association</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">♔ WCA</div>
+                <span class="logo-text">WORLD CHESS ASSOCIATION</span>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="rankings.html" class="nav-link">RANKINGS</a>
+                <a href="events.html" class="nav-link">EVENTS</a>
+                <a href="matches.html" class="nav-link">MATCHES</a>
+                <a href="players.html" class="nav-link">PLAYERS</a>
+                <a href="news.html" class="nav-link">NEWS</a>
+                <a href="archive.html" class="nav-link">ARCHIVE</a>
+            </nav>
+
+            <div class="header-right">
+                <button class="search-btn">🔍</button>
+                <div class="language-toggle">
+                    <span class="lang active">KR</span>
+                    <span class="lang">EN</span>
+                </div>
+                <button class="live-btn">● LIVE MATCHES</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">WORLD CHESS<br>ASSOCIATION</h1>
+            <p class="hero-subtitle">Official Rankings · Championships · International Chess</p>
+        </div>
+    </section>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <span class="breaking-label">BREAKING NEWS</span>
+        <div class="news-ticker">
+            <span class="ticker-item">World No.2 Announces Retirement Following Traffic Accident</span>
+            <span class="ticker-separator">•</span>
+            <span class="ticker-item">World Championship Rematch Officially Cancelled</span>
+            <span class="ticker-separator">•</span>
+            <span class="ticker-item">Emil Nygård Remains World No.1</span>
+            <span class="ticker-separator">•</span>
+            <span class="ticker-item">WCA Announces Updated Championship Schedule</span>
+            <span class="ticker-separator">•</span>
+            <span class="ticker-item">World No.2 Announces Retirement Following Traffic Accident</span>
+        </div>
+    </div>
+
+    <!-- World Rankings Section -->
+    <section class="rankings-section">
+        <div class="section-header">
+            <h2>WORLD RANKINGS</h2>
+            <span class="subtitle">세계 랭킹</span>
+        </div>
+
+        <div class="rankings-container">
+            <div class="rankings-main">
+                <!-- Rank 1 -->
+                <div class="rank-card rank-1">
+                    <div class="rank-badge">WORLD NO.1</div>
+                    <div class="rank-number">1</div>
+                    <div class="player-info">
+                        <h3>Emil Nygård</h3>
+                        <p class="player-original">NORWAY</p>
+                        <p class="flag">🇳🇴</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="label">Rating</span>
+                            <span class="value">2847</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Age</span>
+                            <span class="value">26</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Status</span>
+                            <span class="value status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                    <p class="rank-title">World Champion 2024 · 2025 · 2026</p>
+                </div>
+
+                <!-- Rank 2 -->
+                <div class="rank-card rank-2">
+                    <div class="rank-badge retired">RETIRED</div>
+                    <div class="rank-number">2</div>
+                    <div class="player-info">
+                        <h3>Magnus Andersson</h3>
+                        <p class="player-original">SWEDEN</p>
+                        <p class="flag">🇸🇪</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="label">Rating</span>
+                            <span class="value">2809</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Status</span>
+                            <span class="value status-retired">RETIRED</span>
+                        </div>
+                    </div>
+                    <p class="rank-title">Retirement announced following serious traffic accident</p>
+                </div>
+
+                <!-- Rank 3 -->
+                <div class="rank-card">
+                    <div class="rank-number">3</div>
+                    <div class="player-info">
+                        <h3>Adrian Keller</h3>
+                        <p class="player-original">GERMANY</p>
+                        <p class="flag">🇩🇪</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="label">Rating</span>
+                            <span class="value">2788</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Status</span>
+                            <span class="value status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rank 4 -->
+                <div class="rank-card">
+                    <div class="rank-number">4</div>
+                    <div class="player-info">
+                        <h3>Luca Moretti</h3>
+                        <p class="player-original">ITALY</p>
+                        <p class="flag">🇮🇹</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="label">Rating</span>
+                            <span class="value">2771</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Status</span>
+                            <span class="value status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rank 5 -->
+                <div class="rank-card">
+                    <div class="rank-number">5</div>
+                    <div class="player-info">
+                        <h3>Viktor Sokolov</h3>
+                        <p class="player-original">SERBIA</p>
+                        <p class="flag">🇷🇸</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="label">Rating</span>
+                            <span class="value">2756</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Status</span>
+                            <span class="value status-active">ACTIVE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- World No.1 Info Card -->
+            <div class="info-card">
+                <h3>WORLD NO.1</h3>
+                <h4>Emil Nygård</h4>
+                <div class="info-stats">
+                    <div class="info-stat">
+                        <span class="info-label">Current Rating</span>
+                        <span class="info-value">2847</span>
+                    </div>
+                    <div class="info-stat">
+                        <span class="info-label">Peak Rating</span>
+                        <span class="info-value">2862</span>
+                    </div>
+                    <div class="info-stat">
+                        <span class="info-label">World Championship Titles</span>
+                        <span class="info-value">3</span>
+                    </div>
+                    <div class="info-stat">
+                        <span class="info-label">2026 Record</span>
+                        <span class="info-value">18W 9D 2L</span>
+                    </div>
+                </div>
+                <a href="players/emil-nygard.html" class="btn btn-secondary">VIEW PROFILE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="news-section">
+        <div class="section-header">
+            <h2>LATEST NEWS</h2>
+            <span class="subtitle">최신 뉴스</span>
+        </div>
+
+        <div class="news-container">
+            <!-- Main News -->
+            <article class="news-main">
+                <div class="news-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);"></div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span class="news-category">ANNOUNCEMENT</span>
+                        <span class="news-date">September 7, 2026</span>
+                    </div>
+                    <h3>WORLD NO.2 ANNOUNCES RETIREMENT</h3>
+                    <p>세계 랭킹 2위 선수, 공식 은퇴 선언</p>
+                    <p class="news-excerpt">세계 랭킹 2위 Magnus Andersson이 선수 활동 종료를 공식 발표했습니다. WCA는 오늘 공식 성명을 통해 해당 선수가 심각한 교통사고 이후 장기간 치료와 재활을 이어왔으며, 모든 국제대회 출전을 취소하고 프로 선수 생활을 마무리하기로 결정했다고 밝혔습니다.</p>
+                    <a href="news/retirement-announcement.html" class="btn btn-primary">READ FULL ARTICLE</a>
+                </div>
+                <span class="news-source">WCA NEWSROOM</span>
+            </article>
+
+            <!-- Side News Cards -->
+            <div class="news-side">
+                <article class="news-card">
+                    <div class="news-card-number">1</div>
+                    <h4>WORLD CHAMPIONSHIP REMATCH CANCELLED</h4>
+                    <p>Emil Nygård와 세계 2위의 재대결 공식 취소</p>
+                    <span class="news-date">September 7, 2026</span>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-number">2</div>
+                    <h4>NYGÅRD COMMENTS ON RANKING CHANGE</h4>
+                    <p>"Ranking position and my rivals are not the same thing."</p>
+                    <span class="news-date">September 6, 2026</span>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-number">3</div>
+                    <h4>NEW WORLD NO.2 TO BE CONFIRMED</h4>
+                    <p>WCA, 차기 세계 2위 경쟁 공식 발표</p>
+                    <span class="news-date">September 5, 2026</span>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-number">4</div>
+                    <h4>2026 AUTUMN INTERNATIONAL SERIES</h4>
+                    <p>가을 국제 체스 시리즈 참가 선수 공개</p>
+                    <span class="news-date">September 4, 2026</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Matches Section -->
+    <section class="matches-section">
+        <div class="section-header">
+            <h2>UPCOMING MATCHES</h2>
+            <span class="subtitle">공식 경기 일정</span>
+        </div>
+
+        <div class="matches-container">
+            <!-- September Matches -->
+            <div class="month-group">
+                <h3 class="month-title">SEPTEMBER 2026</h3>
+                <div class="matches-list">
+                    <div class="match-item">
+                        <div class="match-date">
+                            <span class="day">SEP</span>
+                            <span class="number">12</span>
+                        </div>
+                        <div class="match-info">
+                            <p class="match-event">Nordic Masters</p>
+                            <p class="match-location">Oslo, Norway</p>
+                        </div>
+                        <div class="match-players">
+                            <span class="player">Emil Nygård</span>
+                            <span class="vs">vs</span>
+                            <span class="player">Adrian Keller</span>
+                        </div>
+                        <div class="match-time">18:00 CET</div>
+                        <span class="match-status scheduled">SCHEDULED</span>
+                    </div>
+
+                    <div class="match-item">
+                        <div class="match-date">
+                            <span class="day">SEP</span>
+                            <span class="number">18</span>
+                        </div>
+                        <div class="match-info">
+                            <p class="match-event">European Invitational</p>
+                            <p class="match-location">Berlin, Germany</p>
+                        </div>
+                        <div class="match-players">
+                            <span class="player">Viktor Sokolov</span>
+                            <span class="vs">vs</span>
+                            <span class="player">Luca Moretti</span>
+                        </div>
+                        <div class="match-time">16:30 CET</div>
+                        <span class="match-status scheduled">SCHEDULED</span>
+                    </div>
+
+                    <div class="match-item">
+                        <div class="match-date">
+                            <span class="day">SEP</span>
+                            <span class="number">23</span>
+                        </div>
+                        <div class="match-info">
+                            <p class="match-event">WCA Masters Series</p>
+                            <p class="match-location">Paris, France</p>
+                        </div>
+                        <div class="match-players">
+                            <span class="player">Emil Nygård</span>
+                            <span class="vs">vs</span>
+                            <span class="player">Viktor Sokolov</span>
+                        </div>
+                        <div class="match-time">19:00 CET</div>
+                        <span class="match-status scheduled">SCHEDULED</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cancelled Championship -->
+            <div class="cancelled-match">
+                <div class="cancelled-overlay">CANCELLED</div>
+                <h4 class="cancelled-title">WORLD CHAMPIONSHIP REMATCH</h4>
+                <div class="cancelled-players">
+                    <div class="cancelled-player">
+                        <p class="rank">WORLD NO.1</p>
+                        <h3>Emil Nygård</h3>
+                    </div>
+                    <span class="vs-large">vs</span>
+                    <div class="cancelled-player">
+                        <p class="rank">WORLD NO.2</p>
+                        <h3>Magnus Andersson</h3>
+                    </div>
+                </div>
+                <p class="cancelled-info">
+                    <span>Originally Scheduled: August 2026</span><br>
+                    <span>Oslo Chess Arena, Oslo, Norway</span>
+                </p>
+                <p class="cancelled-reason">Player withdrawal following serious traffic accident.</p>
+            </div>
+
+            <!-- October Matches -->
+            <div class="month-group">
+                <h3 class="month-title">OCTOBER 2026</h3>
+                <div class="matches-list">
+                    <div class="match-item">
+                        <div class="match-date">
+                            <span class="day">OCT</span>
+                            <span class="number">04</span>
+                        </div>
+                        <div class="match-info">
+                            <p class="match-event">International Grand Masters Cup</p>
+                            <p class="match-location">Vienna, Austria</p>
+                        </div>
+                        <div class="match-players">
+                            <span class="player">Adrian Keller</span>
+                            <span class="vs">vs</span>
+                            <span class="player">Luca Moretti</span>
+                        </div>
+                        <div class="match-time">17:00 CET</div>
+                        <span class="match-status scheduled">SCHEDULED</span>
+                    </div>
+
+                    <div class="match-item">
+                        <div class="match-date">
+                            <span class="day">OCT</span>
+                            <span class="number">16</span>
+                        </div>
+                        <div class="match-info">
+                            <p class="match-event">WCA Championship Qualifier</p>
+                            <p class="match-location">London, United Kingdom</p>
+                        </div>
+                        <div class="match-players">
+                            <span class="player">TBD</span>
+                            <span class="vs">vs</span>
+                            <span class="player">TBD</span>
+                        </div>
+                        <div class="match-time">18:30 GMT</div>
+                        <span class="match-status qualifier">QUALIFIER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="matches.html" class="btn btn-primary">VIEW FULL SCHEDULE</a>
+    </section>
+
+    <!-- Featured Rivalry Section -->
+    <section class="rivalry-section">
+        <h2 class="section-title">THE RIVALRY</h2>
+        <div class="rivalry-container">
+            <div class="rivalry-player">
+                <h3>Emil Nygård</h3>
+                <p class="title">WORLD NO.1</p>
+            </div>
+
+            <div class="rivalry-stats">
+                <p class="rivalry-label">Career Meetings</p>
+                <h2 class="meeting-count">27</h2>
+                
+                <div class="record">
+                    <div class="record-item">
+                        <span class="number">9</span>
+                        <span class="label">Emil Nygård Wins</span>
+                    </div>
+                    <div class="record-item">
+                        <span class="number">8</span>
+                        <span class="label">Magnus Andersson Wins</span>
+                    </div>
+                    <div class="record-item">
+                        <span class="number">10</span>
+                        <span class="label">Draws</span>
+                    </div>
+                </div>
+
+                <p class="rivalry-detail">
+                    <span>First Meeting: 2019</span><br>
+                    <span>Last Match: 2026</span>
+                </p>
+
+                <p class="rivalry-text">
+                    For seven years, the rivalry between World No.1 Emil Nygård and World No.2 Magnus Andersson defined the highest level of international chess.
+                </p>
+
+                <a href="rivalries/nygard-andersson.html" class="btn btn-secondary">VIEW RIVALRY HISTORY</a>
+            </div>
+
+            <div class="rivalry-player">
+                <h3>Magnus Andersson</h3>
+                <p class="title">WORLD NO.2 (RETIRED)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Results Section -->
+    <section class="results-section">
+        <div class="section-header">
+            <h2>LATEST RESULTS</h2>
+            <span class="subtitle">최근 경기 결과</span>
+        </div>
+
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>Tournament</th>
+                    <th>Match</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="result-row">
+                    <td class="tournament-name">WCA GRAND PRIX</td>
+                    <td class="match-result">
+                        <span class="player-name">Emil Nygård</span>
+                        <span class="score">1 - 0</span>
+                        <span class="player-name">Adrian Keller</span>
+                    </td>
+                    <td class="status completed">COMPLETED</td>
+                </tr>
+                <tr class="result-row">
+                    <td class="tournament-name">EUROPEAN MASTERS</td>
+                    <td class="match-result">
+                        <span class="player-name">Luca Moretti</span>
+                        <span class="score">½ - ½</span>
+                        <span class="player-name">Viktor Sokolov</span>
+                    </td>
+                    <td class="status draw">DRAW</td>
+                </tr>
+                <tr class="result-row">
+                    <td class="tournament-name">NORWAY OPEN</td>
+                    <td class="match-result">
+                        <span class="player-name">Emil Nygård</span>
+                        <span class="score">½ - ½</span>
+                        <span class="player-name">Magnus Andersson</span>
+                    </td>
+                    <td class="status draw">DRAW</td>
+                </tr>
+                <tr class="result-row">
+                    <td class="tournament-name">WORLD MASTERS</td>
+                    <td class="match-result">
+                        <span class="player-name">Magnus Andersson</span>
+                        <span class="score">1 - 0</span>
+                        <span class="player-name">Emil Nygård</span>
+                    </td>
+                    <td class="status completed">COMPLETED</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Player Spotlight Section -->
+    <section class="spotlight-section">
+        <h2 class="section-title">PLAYER SPOTLIGHT</h2>
+        <div class="spotlight-container">
+            <div class="spotlight-image"></div>
+            <div class="spotlight-content">
+                <h3>EMIL NYGÅRD</h3>
+                <p class="spotlight-rank">World Rank #1</p>
+                <div class="spotlight-info">
+                    <div class="info-item">
+                        <span class="label">Nationality</span>
+                        <span class="value">Norway 🇳🇴</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Age</span>
+                        <span class="value">26</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Playing Style</span>
+                        <span class="value">Aggressive Positional</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">World Titles</span>
+                        <span class="value">3</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Current Rating</span>
+                        <span class="value">2847</span>
+                    </div>
+                </div>
+                <a href="players/emil-nygard.html" class="btn btn-primary">VIEW PLAYER PROFILE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>WORLD CHESS ASSOCIATION</h4>
+                <p>Official international ranking and competition authority.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="about.html">About WCA</a></li>
+                    <li><a href="rankings.html">Rankings</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="regulations.html">Regulations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">▶</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 World Chess Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
