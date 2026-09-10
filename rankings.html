@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Rankings - WCA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">♔ WCA</div>
+                <span class="logo-text">WORLD CHESS ASSOCIATION</span>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="rankings.html" class="nav-link active">RANKINGS</a>
+                <a href="events.html" class="nav-link">EVENTS</a>
+                <a href="matches.html" class="nav-link">MATCHES</a>
+                <a href="players.html" class="nav-link">PLAYERS</a>
+                <a href="news.html" class="nav-link">NEWS</a>
+                <a href="archive.html" class="nav-link">ARCHIVE</a>
+            </nav>
+
+            <div class="header-right">
+                <button class="search-btn">🔍</button>
+                <div class="language-toggle">
+                    <span class="lang active">KR</span>
+                    <span class="lang">EN</span>
+                </div>
+                <button class="live-btn">● LIVE MATCHES</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>WORLD RANKINGS</h1>
+        <p>세계 랭킹</p>
+        <p class="update-info">Updated September 2026</p>
+    </section>
+
+    <!-- Rankings Controls -->
+    <section class="rankings-page">
+        <div class="rankings-controls">
+            <div class="control-group">
+                <label for="status-filter">Status Filter:</label>
+                <select id="status-filter">
+                    <option value="all">모든 선수</option>
+                    <option value="active">활동 중</option>
+                    <option value="retired">은퇴</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="country-filter">Country:</label>
+                <input type="text" id="country-filter" placeholder="국가 검색...">
+            </div>
+        </div>
+
+        <!-- Rankings Table -->
+        <div class="rankings-table-container">
+            <table class="rankings-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Nation</th>
+                        <th>Rating</th>
+                        <th>Change</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rank 1 -->
+                    <tr class="rank-row rank-1-row">
+                        <td class="rank-col">
+                            <span class="badge world-no-1">WORLD NO.1</span>
+                            <span class="rank-num">1</span>
+                        </td>
+                        <td class="player-col">
+                            <strong>Emil Nygård</strong>
+                        </td>
+                        <td class="nation-col">
+                            <span class="nation">Norway</span>
+                            <span class="flag">🇳🇴</span>
+                        </td>
+                        <td class="rating-col"><strong>2847</strong></td>
+                        <td class="change-col">
+                            <span class="change stable">—</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="players/emil-nygard.html" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 2 -->
+                    <tr class="rank-row rank-2-row">
+                        <td class="rank-col">
+                            <span class="badge retired-badge">RETIRED</span>
+                            <span class="rank-num">2</span>
+                        </td>
+                        <td class="player-col">
+                            <strong>Magnus Andersson</strong>
+                        </td>
+                        <td class="nation-col">
+                            <span class="nation">Sweden</span>
+                            <span class="flag">🇸🇪</span>
+                        </td>
+                        <td class="rating-col"><strong>2809</strong></td>
+                        <td class="change-col">
+                            <span class="change down">↓</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge retired">RETIRED</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="players/magnus-andersson.html" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 3 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">3</span></td>
+                        <td class="player-col"><strong>Adrian Keller</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Germany</span>
+                            <span class="flag">🇩🇪</span>
+                        </td>
+                        <td class="rating-col"><strong>2788</strong></td>
+                        <td class="change-col">
+                            <span class="change up">▲1</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="players/adrian-keller.html" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 4 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">4</span></td>
+                        <td class="player-col"><strong>Luca Moretti</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Italy</span>
+                            <span class="flag">🇮🇹</span>
+                        </td>
+                        <td class="rating-col"><strong>2771</strong></td>
+                        <td class="change-col">
+                            <span class="change stable">—</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="players/luca-moretti.html" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 5 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">5</span></td>
+                        <td class="player-col"><strong>Viktor Sokolov</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Serbia</span>
+                            <span class="flag">🇷🇸</span>
+                        </td>
+                        <td class="rating-col"><strong>2756</strong></td>
+                        <td class="change-col">
+                            <span class="change down">▼1</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="players/viktor-sokolov.html" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 6 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">6</span></td>
+                        <td class="player-col"><strong>Anita Pohl</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Germany</span>
+                            <span class="flag">🇩🇪</span>
+                        </td>
+                        <td class="rating-col"><strong>2743</strong></td>
+                        <td class="change-col">
+                            <span class="change up">▲2</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 7 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">7</span></td>
+                        <td class="player-col"><strong>Dmitri Volkov</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Russia</span>
+                            <span class="flag">🇷🇺</span>
+                        </td>
+                        <td class="rating-col"><strong>2738</strong></td>
+                        <td class="change-col">
+                            <span class="change stable">—</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 8 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">8</span></td>
+                        <td class="player-col"><strong>Yuki Tanaka</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Japan</span>
+                            <span class="flag">🇯🇵</span>
+                        </td>
+                        <td class="rating-col"><strong>2725</strong></td>
+                        <td class="change-col">
+                            <span class="change down">▼1</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 9 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">9</span></td>
+                        <td class="player-col"><strong>Alejandro Ruiz</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Spain</span>
+                            <span class="flag">🇪🇸</span>
+                        </td>
+                        <td class="rating-col"><strong>2718</strong></td>
+                        <td class="change-col">
+                            <span class="change up">▲3</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 10 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">10</span></td>
+                        <td class="player-col"><strong>Sophie Laurent</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">France</span>
+                            <span class="flag">🇫🇷</span>
+                        </td>
+                        <td class="rating-col"><strong>2712</strong></td>
+                        <td class="change-col">
+                            <span class="change stable">—</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <!-- Additional ranks 11-20 -->
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">11</span></td>
+                        <td class="player-col"><strong>Chen Wei</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">China</span>
+                            <span class="flag">🇨🇳</span>
+                        </td>
+                        <td class="rating-col"><strong>2705</strong></td>
+                        <td class="change-col">
+                            <span class="change down">▼2</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">12</span></td>
+                        <td class="player-col"><strong>Hans Mueller</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Switzerland</span>
+                            <span class="flag">🇨🇭</span>
+                        </td>
+                        <td class="rating-col"><strong>2698</strong></td>
+                        <td class="change-col">
+                            <span class="change up">▲1</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">13</span></td>
+                        <td class="player-col"><strong>Lucia Gomez</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Argentina</span>
+                            <span class="flag">🇦🇷</span>
+                        </td>
+                        <td class="rating-col"><strong>2691</strong></td>
+                        <td class="change-col">
+                            <span class="change stable">—</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">14</span></td>
+                        <td class="player-col"><strong>Ivan Petrov</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Russia</span>
+                            <span class="flag">🇷🇺</span>
+                        </td>
+                        <td class="rating-col"><strong>2684</strong></td>
+                        <td class="change-col">
+                            <span class="change down">▼1</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">15</span></td>
+                        <td class="player-col"><strong>Maria Santos</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Brazil</span>
+                            <span class="flag">🇧🇷</span>
+                        </td>
+                        <td class="rating-col"><strong>2679</strong></td>
+                        <td class="change-col">
+                            <span class="change up">▲2</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">16</span></td>
+                        <td class="player-col"><strong>Park Min-jun</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">South Korea</span>
+                            <span class="flag">🇰🇷</span>
+                        </td>
+                        <td class="rating-col"><strong>2673</strong></td>
+                        <td class="change-col">
+                            <span class="change stable">—</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">17</span></td>
+                        <td class="player-col"><strong>Oliver White</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">United Kingdom</span>
+                            <span class="flag">🇬🇧</span>
+                        </td>
+                        <td class="rating-col"><strong>2668</strong></td>
+                        <td class="change-col">
+                            <span class="change down">▼3</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">18</span></td>
+                        <td class="player-col"><strong>Emma Schmidt</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Austria</span>
+                            <span class="flag">🇦🇹</span>
+                        </td>
+                        <td class="rating-col"><strong>2662</strong></td>
+                        <td class="change-col">
+                            <span class="change up">▲1</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">19</span></td>
+                        <td class="player-col"><strong>Thomas Berg</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Netherlands</span>
+                            <span class="flag">🇳🇱</span>
+                        </td>
+                        <td class="rating-col"><strong>2657</strong></td>
+                        <td class="change-col">
+                            <span class="change stable">—</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+
+                    <tr class="rank-row">
+                        <td class="rank-col"><span class="rank-num">20</span></td>
+                        <td class="player-col"><strong>Giulia Rossi</strong></td>
+                        <td class="nation-col">
+                            <span class="nation">Italy</span>
+                            <span class="flag">🇮🇹</span>
+                        </td>
+                        <td class="rating-col"><strong>2651</strong></td>
+                        <td class="change-col">
+                            <span class="change down">▼2</span>
+                        </td>
+                        <td class="status-col">
+                            <span class="status-badge active">ACTIVE</span>
+                        </td>
+                        <td class="action-col">
+                            <a href="#" class="view-link">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <span class="pagination-dots">...</span>
+            <button class="pagination-btn">10</button>
+        </div>
+
+        <!-- Legend -->
+        <div class="rankings-legend">
+            <div class="legend-item">
+                <span class="legend-label">Last Ranking Date:</span>
+                <span class="legend-value">September 1, 2026</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-label">Next Update:</span>
+                <span class="legend-value">October 1, 2026</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-label">Change Calculation:</span>
+                <span class="legend-value">Month-on-month ranking change</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>WORLD CHESS ASSOCIATION</h4>
+                <p>Official international ranking and competition authority.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="about.html">About WCA</a></li>
+                    <li><a href="rankings.html">Rankings</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="regulations.html">Regulations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">▶</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 World Chess Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="rankings.js"></script>
+</body>
+</html>
