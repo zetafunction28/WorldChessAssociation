@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - WCA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">♔ WCA</div>
+                <span class="logo-text">WORLD CHESS ASSOCIATION</span>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="rankings.html" class="nav-link">RANKINGS</a>
+                <a href="events.html" class="nav-link">EVENTS</a>
+                <a href="matches.html" class="nav-link">MATCHES</a>
+                <a href="players.html" class="nav-link">PLAYERS</a>
+                <a href="news.html" class="nav-link active">NEWS</a>
+                <a href="archive.html" class="nav-link">ARCHIVE</a>
+            </nav>
+
+            <div class="header-right">
+                <button class="search-btn">🔍</button>
+                <div class="language-toggle">
+                    <span class="lang active">KR</span>
+                    <span class="lang">EN</span>
+                </div>
+                <button class="live-btn">● LIVE MATCHES</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>WCA NEWSROOM</h1>
+        <p>최신 뉴스 및 공식 발표</p>
+    </section>
+
+    <!-- News Page -->
+    <section class="news-page">
+        <!-- Filter Controls -->
+        <div class="news-filters">
+            <span class="filter-label">Filter:</span>
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="championship">CHAMPIONSHIP</button>
+            <button class="filter-btn" data-filter="players">PLAYERS</button>
+            <button class="filter-btn" data-filter="rankings">RANKINGS</button>
+            <button class="filter-btn" data-filter="announcements">ANNOUNCEMENTS</button>
+            <button class="filter-btn" data-filter="interviews">INTERVIEWS</button>
+        </div>
+
+        <!-- News List -->
+        <div class="news-list">
+            <!-- Article 1 - Main Featured -->
+            <article class="news-article featured" data-category="announcements">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">ANNOUNCEMENT</span>
+                        <span class="article-date">September 7, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">WORLD NO.2 ANNOUNCES RETIREMENT</h2>
+                <p class="article-excerpt">세계 랭킹 2위 Magnus Andersson이 선수 활동 종료를 공식 발표했습니다. WCA는 오늘 공식 성명을 통해 해당 선수가 심각한 교통사고 이후 장기간 치료와 재활을 이어왔으며, 모든 국제대회 출전을 취소하고 프로 선수 생활을 마무리하기로 결정했다고 밝혔습니다. 사고 전 Magnus Andersson은 세계 랭킹 1위 Emil Nygård와 WCA World Championship 재대결을 앞두고 있었습니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="news-article" data-category="championship">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">CHAMPIONSHIP</span>
+                        <span class="article-date">September 7, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">WORLD CHAMPIONSHIP REMATCH CANCELLED</h2>
+                <p class="article-excerpt">WCA는 공식 성명을 통해 세계 랭킹 1위 Emil Nygård와 2위 Magnus Andersson 사이의 예정된 World Championship 재대결이 Magnus Andersson의 공식 은퇴로 인해 무기한 연기 상태에서 최종 취소되었다고 발표했습니다. 이번 경기는 2026 시즌 최고의 관심을 받던 매치였습니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="news-article" data-category="rankings">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">RANKINGS</span>
+                        <span class="article-date">September 6, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">NYGÅRD COMMENTS ON RANKING CHANGE</h2>
+                <p class="article-excerpt">세계 랭킹 1위 Emil Nygård는 공식 기자회견에서 세계 2위 선수의 은퇴와 관련하여 다음과 같이 입장을 밝혔습니다: "세계 랭킹 2위와 내 라이벌은 같은 뜻이 아닙니다. 우리는 많은 경기를 함께했고, 그 결과는 객관적입니다. 개인적으로는 그가 건강하게 회복되길 바랍니다."</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="news-article" data-category="announcements">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">ANNOUNCEMENT</span>
+                        <span class="article-date">September 5, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">NEW WORLD NO.2 TO BE CONFIRMED</h2>
+                <p class="article-excerpt">WCA는 차기 세계 랭킹 2위 선수를 결정하기 위한 공식 절차를 시작한다고 발표했습니다. 현재 3위부터 7위까지의 선수들이 차기 World Championship Qualifier에 참가하여 그들의 자리를 놓고 경쟁할 예정입니다. 최종 순위는 2026년 10월 발표될 예정입니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="news-article" data-category="announcements">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">ANNOUNCEMENT</span>
+                        <span class="article-date">September 4, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">2026 AUTUMN INTERNATIONAL SERIES</h2>
+                <p class="article-excerpt">WCA는 2026 가을 국제 체스 시리즈의 공식 참가 선수 명단을 발표했습니다. 세계 상위 20위 선수들과 초대 선수들을 포함한 총 128명의 선수가 9월부터 11월까지 진행되는 4개의 주요 대회에 참가합니다. Nordic Masters, European Invitational, WCA Masters Series, 그리고 International Grand Masters Cup이 스케줄되어 있습니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="news-article" data-category="interviews">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">INTERVIEW</span>
+                        <span class="article-date">September 3, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">ADRIAN KELLER: "Ready for the Challenge"</h2>
+                <p class="article-excerpt">세계 랭킹 3위 Adrian Keller는 2026 가을 국제 시리즈에 대비한 심층 인터뷰를 진행했습니다. "이전보다 더욱 집중하고 있습니다. 상위권 선수들과의 경기는 항상 배우는 기회이고, 이번 시즌이 제 랭킹을 끌어올릴 수 있는 중요한 턴이 될 것이라고 생각합니다"라고 말했습니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 7 -->
+            <article class="news-article" data-category="players">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">PLAYER</span>
+                        <span class="article-date">September 2, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">LUCA MORETTI BREAKS INTO TOP 5</h2>
+                <p class="article-excerpt">이탈리아의 Luca Moretti가 공식 랭킹에서 처음으로 세계 상위 5위에 진입했습니다. 최근 3개월간의 뛰어난 성과로 그의 레이팅은 2771점에 도달했으며, 현재 세계 4위를 기록 중입니다. Moretti는 "이것은 제 노력의 결과이며, 더욱 높은 목표를 향해 계속 나아가겠습니다"라고 밝혔습니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="news-article" data-category="championship">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">CHAMPIONSHIP</span>
+                        <span class="article-date">September 1, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">WCA CHAMPIONSHIP QUALIFIER OFFICIAL RULES ANNOUNCED</h2>
+                <p class="article-excerpt">WCA는 2026 World Championship Qualifier의 공식 규칙과 일정을 발표했습니다. 10월 16-20일 런던에서 진행될 예정이며, 상위 10명의 선수가 2027년 World Championship에 직접 진출 자격을 획득하게 됩니다. 참가 신청은 9월 15일까지 진행됩니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="news-article" data-category="rankings">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">RANKINGS</span>
+                        <span class="article-date">August 31, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">AUGUST RANKING UPDATE: MAJOR CHANGES AT THE TOP</h2>
+                <p class="article-excerpt">8월 공식 랭킹 업데이트가 발표되었습니다. Emil Nygård는 2847점으로 세계 1위를 유지하고 있으며, Magnus Andersson은 2809점으로 2위에 있습니다. Adrian Keller가 3위로 상승했고, 하위권에서도 여러 순위 변동이 있었습니다. 전체 Top 20 랭킹은 WCA 공식 홈페이지에서 확인하실 수 있습니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 10 -->
+            <article class="news-article" data-category="announcements">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">ANNOUNCEMENT</span>
+                        <span class="article-date">August 28, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">WCA INTRODUCES NEW RATING CALCULATION SYSTEM</h2>
+                <p class="article-excerpt">WCA는 더욱 공정하고 투명한 레이팅 계산 시스템을 새로 도입하기로 결정했습니다. 2026년 10월부터 적용될 새로운 시스템은 선수들의 경기 성과를 더욱 정확하게 평가할 것으로 예상됩니다. 상세한 규칙 변경사항은 WCA regulations 페이지에서 확인하실 수 있습니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 11 -->
+            <article class="news-article" data-category="players">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">PLAYER</span>
+                        <span class="article-date">August 25, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">VIKTOR SOKOLOV RETAINS WORLD NO.5 POSITION</h2>
+                <p class="article-excerpt">세르비아의 Viktor Sokolov는 안정적인 경기력으로 세계 5위 자리를 지키고 있습니다. 최근 Nordic Open에서 우승하며 2756점의 레이팅을 확보한 그는, "이번 결과에 만족하지 않고 계속 향상을 목표로 훈련하고 있습니다"라고 밝혔습니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+
+            <!-- Article 12 -->
+            <article class="news-article" data-category="interviews">
+                <div class="article-header">
+                    <div class="article-meta">
+                        <span class="article-category">INTERVIEW</span>
+                        <span class="article-date">August 22, 2026</span>
+                    </div>
+                </div>
+                <h2 class="article-title">ANITA POHL: "Breaking Through to Elite Level"</h2>
+                <p class="article-excerpt">독일의 여성 선수 Anita Pohl이 최근의 급성장에 대해 인터뷰를 가졌습니다. 세계 6위에 오른 그녀는 "많은 훈련과 멘토의 도움 덕분에 여기까지 올 수 있었습니다. 앞으로 더욱 높은 목표를 향해 나아가겠습니다"라고 말했습니다. 그녀의 현재 레이팅은 2743점입니다.</p>
+                <a href="#" class="read-more-link">Read Full Article →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>WORLD CHESS ASSOCIATION</h4>
+                <p>Official international ranking and competition authority.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="about.html">About WCA</a></li>
+                    <li><a href="rankings.html">Rankings</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="regulations.html">Regulations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">▶</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 World Chess Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="news.js"></script>
+</body>
+</html>
