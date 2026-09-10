@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches - WCA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">♔ WCA</div>
+                <span class="logo-text">WORLD CHESS ASSOCIATION</span>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="rankings.html" class="nav-link">RANKINGS</a>
+                <a href="events.html" class="nav-link">EVENTS</a>
+                <a href="matches.html" class="nav-link active">MATCHES</a>
+                <a href="players.html" class="nav-link">PLAYERS</a>
+                <a href="news.html" class="nav-link">NEWS</a>
+                <a href="archive.html" class="nav-link">ARCHIVE</a>
+            </nav>
+
+            <div class="header-right">
+                <button class="search-btn">🔍</button>
+                <div class="language-toggle">
+                    <span class="lang active">KR</span>
+                    <span class="lang">EN</span>
+                </div>
+                <button class="live-btn">● LIVE MATCHES</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>OFFICIAL MATCH SCHEDULE</h1>
+        <p>공식 경기 일정 및 결과</p>
+    </section>
+
+    <!-- Matches Page -->
+    <section class="matches-page">
+        <!-- Filter Controls -->
+        <div class="matches-filters">
+            <div class="filter-group">
+                <label>Status:</label>
+                <select id="status-filter">
+                    <option value="all">모든 경기</option>
+                    <option value="scheduled">예정된 경기</option>
+                    <option value="live">진행 중</option>
+                    <option value="completed">완료된 경기</option>
+                    <option value="cancelled">취소된 경기</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Month:</label>
+                <select id="month-filter">
+                    <option value="all">모든 달</option>
+                    <option value="september">September 2026</option>
+                    <option value="october">October 2026</option>
+                    <option value="november">November 2026</option>
+                    <option value="december">December 2026</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Matches Schedule -->
+        <div class="matches-container">
+            <!-- September 2026 -->
+            <div class="month-section" data-month="september">
+                <h2 class="month-heading">SEPTEMBER 2026</h2>
+
+                <!-- Nordic Masters -->
+                <div class="event-matches">
+                    <h3 class="event-title">Nordic Masters</h3>
+                    <p class="event-info">Oslo, Norway · Sep 12-15, 2026</p>
+
+                    <div class="match-card scheduled">
+                        <div class="match-header">
+                            <span class="match-round">Round 1</span>
+                            <span class="match-status">SCHEDULED</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#1</span>
+                                    <span class="player-name">Emil Nygård</span>
+                                </div>
+                                <span class="player-country">🇳🇴 Norway</span>
+                            </div>
+                            <div class="match-vs">vs</div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#5</span>
+                                    <span class="player-name">Viktor Sokolov</span>
+                                </div>
+                                <span class="player-country">🇷🇸 Serbia</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">September 12, 18:00 CET</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="match-card scheduled">
+                        <div class="match-header">
+                            <span class="match-round">Round 1</span>
+                            <span class="match-status">SCHEDULED</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#3</span>
+                                    <span class="player-name">Adrian Keller</span>
+                                </div>
+                                <span class="player-country">🇩🇪 Germany</span>
+                            </div>
+                            <div class="match-vs">vs</div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#4</span>
+                                    <span class="player-name">Luca Moretti</span>
+                                </div>
+                                <span class="player-country">🇮🇹 Italy</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">September 12, 19:30 CET</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- European Invitational -->
+                <div class="event-matches">
+                    <h3 class="event-title">European Invitational</h3>
+                    <p class="event-info">Berlin, Germany · Sep 18-22, 2026</p>
+
+                    <div class="match-card scheduled">
+                        <div class="match-header">
+                            <span class="match-round">Round 1</span>
+                            <span class="match-status">SCHEDULED</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#5</span>
+                                    <span class="player-name">Viktor Sokolov</span>
+                                </div>
+                                <span class="player-country">🇷🇸 Serbia</span>
+                            </div>
+                            <div class="match-vs">vs</div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#4</span>
+                                    <span class="player-name">Luca Moretti</span>
+                                </div>
+                                <span class="player-country">🇮🇹 Italy</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">September 18, 16:30 CET</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WCA Masters Series -->
+                <div class="event-matches">
+                    <h3 class="event-title">WCA Masters Series</h3>
+                    <p class="event-info">Paris, France · Sep 23-30, 2026</p>
+
+                    <div class="match-card scheduled">
+                        <div class="match-header">
+                            <span class="match-round">Round 1</span>
+                            <span class="match-status">SCHEDULED</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#1</span>
+                                    <span class="player-name">Emil Nygård</span>
+                                </div>
+                                <span class="player-country">🇳🇴 Norway</span>
+                            </div>
+                            <div class="match-vs">vs</div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#5</span>
+                                    <span class="player-name">Viktor Sokolov</span>
+                                </div>
+                                <span class="player-country">🇷🇸 Serbia</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">September 23, 19:00 CET</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- October 2026 -->
+            <div class="month-section" data-month="october">
+                <h2 class="month-heading">OCTOBER 2026</h2>
+
+                <!-- International Grand Masters Cup -->
+                <div class="event-matches">
+                    <h3 class="event-title">International Grand Masters Cup</h3>
+                    <p class="event-info">Vienna, Austria · Oct 4-8, 2026</p>
+
+                    <div class="match-card scheduled">
+                        <div class="match-header">
+                            <span class="match-round">Round 1</span>
+                            <span class="match-status">SCHEDULED</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#3</span>
+                                    <span class="player-name">Adrian Keller</span>
+                                </div>
+                                <span class="player-country">🇩🇪 Germany</span>
+                            </div>
+                            <div class="match-vs">vs</div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#4</span>
+                                    <span class="player-name">Luca Moretti</span>
+                                </div>
+                                <span class="player-country">🇮🇹 Italy</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">October 4, 17:00 CET</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WCA Championship Qualifier -->
+                <div class="event-matches">
+                    <h3 class="event-title">WCA Championship Qualifier</h3>
+                    <p class="event-info">London, United Kingdom · Oct 16-20, 2026</p>
+
+                    <div class="match-card scheduled">
+                        <div class="match-header">
+                            <span class="match-round">Round 1</span>
+                            <span class="match-status">SCHEDULED</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">TBD</span>
+                                    <span class="player-name">TBD</span>
+                                </div>
+                                <span class="player-country">TBD</span>
+                            </div>
+                            <div class="match-vs">vs</div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">TBD</span>
+                                    <span class="player-name">TBD</span>
+                                </div>
+                                <span class="player-country">TBD</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">October 16-20, 2026</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Completed Matches -->
+            <div class="month-section completed-section">
+                <h2 class="month-heading">RECENT RESULTS</h2>
+
+                <div class="event-matches">
+                    <div class="match-card completed">
+                        <div class="match-header">
+                            <span class="match-round">WCA Grand Prix</span>
+                            <span class="match-status">COMPLETED</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#1</span>
+                                    <span class="player-name">Emil Nygård</span>
+                                </div>
+                                <span class="player-country">🇳🇴 Norway</span>
+                            </div>
+                            <div class="match-result">
+                                <span class="result-score">1</span>
+                                <span class="result-dash">-</span>
+                                <span class="result-score">0</span>
+                            </div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#3</span>
+                                    <span class="player-name">Adrian Keller</span>
+                                </div>
+                                <span class="player-country">🇩🇪 Germany</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">September 8, 2026</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="match-card completed">
+                        <div class="match-header">
+                            <span class="match-round">European Masters</span>
+                            <span class="match-status">DRAW</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#4</span>
+                                    <span class="player-name">Luca Moretti</span>
+                                </div>
+                                <span class="player-country">🇮🇹 Italy</span>
+                            </div>
+                            <div class="match-result">
+                                <span class="result-score">½</span>
+                                <span class="result-dash">-</span>
+                                <span class="result-score">½</span>
+                            </div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#5</span>
+                                    <span class="player-name">Viktor Sokolov</span>
+                                </div>
+                                <span class="player-country">🇷🇸 Serbia</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">September 5, 2026</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="match-card completed">
+                        <div class="match-header">
+                            <span class="match-round">Norway Open</span>
+                            <span class="match-status">DRAW</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#1</span>
+                                    <span class="player-name">Emil Nygård</span>
+                                </div>
+                                <span class="player-country">🇳🇴 Norway</span>
+                            </div>
+                            <div class="match-result">
+                                <span class="result-score">½</span>
+                                <span class="result-dash">-</span>
+                                <span class="result-score">½</span>
+                            </div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#2</span>
+                                    <span class="player-name">Magnus Andersson</span>
+                                </div>
+                                <span class="player-country">🇸🇪 Sweden</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">August 30, 2026</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="match-card completed">
+                        <div class="match-header">
+                            <span class="match-round">World Masters</span>
+                            <span class="match-status">COMPLETED</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#2</span>
+                                    <span class="player-name">Magnus Andersson</span>
+                                </div>
+                                <span class="player-country">🇸🇪 Sweden</span>
+                            </div>
+                            <div class="match-result">
+                                <span class="result-score">1</span>
+                                <span class="result-dash">-</span>
+                                <span class="result-score">0</span>
+                            </div>
+                            <div class="match-player">
+                                <div class="player-info">
+                                    <span class="player-rank">#1</span>
+                                    <span class="player-name">Emil Nygård</span>
+                                </div>
+                                <span class="player-country">🇳🇴 Norway</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="match-time">August 25, 2026</span>
+                            <a href="#" class="match-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="matches-statistics">
+            <h2>2026 MATCH STATISTICS</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">47</div>
+                    <div class="stat-label">Total Matches</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Scheduled</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Draws</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>WORLD CHESS ASSOCIATION</h4>
+                <p>Official international ranking and competition authority.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="about.html">About WCA</a></li>
+                    <li><a href="rankings.html">Rankings</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="regulations.html">Regulations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">▶</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 World Chess Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="matches.js"></script>
+</body>
+</html>
